@@ -4,13 +4,28 @@
 <title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="candy.css">
+<script>
+  function toggleTheme() {
+      var theme = document.getElementsByTagName('link')[0];
+      if (theme.getAttribute('href') == 'candy.css'){
+          theme.setAttribute('href','dark.css');
+      }
+      else{
+          theme.setAttribute('href','candy.css')
+      }
+  }
+</script>
+
 </head>
 <body>
 
 
 <header>
-  <h2>Chayapol's Portfolio</h2>
+  <h2>Morgans Portfolio</h2>
+  <img onclick="toggleTheme()" src="img/lollipop.png" class="dark-mode"
+  height="50"
+  width="auto">
 </header>
 
 <section>
@@ -25,13 +40,16 @@
   <article>
     <h1>ABOUT ME</h1>
     <p>
-        Hi! Nice to see you.
+        Hi! Im from France and i love cheese
     </p>
+    <img src="img/wakeboarding.jpg" id=wakeboarding
+    width="300"
+    height="180">
   </article>
 </section>
 
 <footer>
-  <p>Contact me: mchayapol@gmail.com</p>
+  <p>Contact me: morgankieffer@gmail.com</p>
 </footer>
 
 </body>
